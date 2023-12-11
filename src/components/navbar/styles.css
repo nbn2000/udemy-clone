@@ -1,0 +1,330 @@
+/* Navbar styles */
+
+/* =====BIG SCREEN===== */
+
+.big-screen {
+  height: 100px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.float-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 30px;
+}
+
+.big-screen .udemy-logo {
+  width: 161px;
+}
+
+.big-screen .udemy-logo img {
+  width: 100%;
+}
+
+.big-screen .searchbar {
+  border-radius: 8px;
+  border: 1px solid var(--color-grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 443px;
+}
+
+.big-screen .searchbar input {
+  height: 48px;
+  width: calc(100% - 35px);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.big-screen .searchbar button {
+  border: none;
+  background-color: transparent;
+}
+.big-screen .search-icon {
+  height: 35px;
+  width: 35px;
+  color: var(--color-grey);
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.icon-down {
+  width: 12px;
+  margin: 0 5px;
+  color: var(--color-text);
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+}
+
+.big-screen a {
+  color: var(--color-text);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.big-screen .login,
+.signup {
+  border-radius: 8px;
+}
+
+.big-screen .login {
+  padding: 15px 35px;
+  border: 1px solid var(--color-text);
+}
+
+.big-screen .signup {
+  padding: 16px 35px;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  background-color: var(--color-text);
+  min-width: 160px;
+  z-index: 5;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: var(--color-white);
+  display: block;
+  padding: 10px 5px;
+  font-family: "Rubik", "Montserrat", sans-serif;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-white);
+  color: var(--color-text);
+  transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 1300px) {
+  .big-screen {
+    padding: 10px;
+  }
+
+  .big-screen img {
+    height: 60%;
+  }
+
+  .big-screen .float-right {
+    gap: 15px;
+  }
+
+  .big-screen .searchbar {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .big-screen img {
+    height: 40%;
+  }
+  .big-screen .searchbar {
+    width: 220px;
+  }
+
+  .big-screen .searchbar input {
+    font-size: 12px;
+  }
+
+  .big-screen .float-right {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .big-screen .searchbar {
+    width: 40%;
+    min-width: 40%;
+  }
+
+  .big-screen .float-right {
+    justify-content: space-between;
+    width: 80%;
+    min-width: 80%;
+  }
+}
+
+/* =====SMALL SCREEN===== */
+
+.small-screen {
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-screen img {
+  width: 90px;
+}
+
+.menu .menu-button {
+  position: relative;
+  border: none;
+  font-size: 40px;
+  color: var(--color-text);
+  background-color: transparent;
+}
+
+.displayed-menu {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: var(--color-text);
+  color: var(--color-white);
+  padding: 30px;
+  border-radius: 0 8px 8px 0;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+  transition: transform 0.5s ease-in-out;
+}
+
+.displayed-menu .line {
+  border: 1px solid var(--color-white);
+  margin: 10px 0;
+  width: 100%;
+}
+
+.displayed-menu a {
+  color: var(--color-white);
+}
+
+.menu .close-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+  left: 220px;
+  top: 10px;
+  z-index: 2;
+}
+
+.small-screen img {
+  height: 80%;
+}
+
+.small-screen .searchbar {
+  height: 48px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.small-screen .searchbar input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.small-screen .search-icon {
+  height: 100%;
+  width: 48px;
+  color: var(--color-text);
+}
+
+.small-screen .searchbar button {
+  background-color: transparent;
+  border: none;
+}
+
+/* ====FOR GREY COLOR==== */
+
+.grey {
+  background-color: var(--color-bg-gray-darker);
+}
+
+.grey input::placeholder {
+  color: #e6e6e6;
+}
+
+.grey .dropbtn,
+.grey .icon-down,
+.grey a,
+.grey svg,
+.grey .search-icon {
+  color: var(--color-white);
+}
+
+.grey .login {
+  border: 1px solid var(--color-white);
+}
+
+.big-screen .account-name {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.big-screen .account-name .avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-grey-dark);
+}
+
+.small-screen .account-name {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-screen .account-name .avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-grey-dark);
+}

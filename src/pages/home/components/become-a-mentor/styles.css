@@ -1,0 +1,57 @@
+/* ====BECOME A MENTOR==== */
+
+.bcam-a-mentor {
+  min-height: 657px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: -50px;
+}
+
+.bcam-a-mentor .bam-img-holder {
+  width: 550px;
+  height: 600px;
+  background-color: var(--color-grey);
+  border-radius: 8px;
+}
+
+.bcam-a-mentor .bam-img-holder img {
+  border-radius: 8px;
+}
+
+.bcam-a-mentor .bam-info {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.bcam-a-mentor .bam-info h2 {
+  color: var(--color-text);
+}
+
+.bcam-a-mentor .bam-info p {
+  color: var(--color-black-light);
+}
+
+.bcam-a-mentor .bam-info button {
+  padding: 16px 40px;
+  line-height: 32px;
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+  .bcam-a-mentor {
+    padding: 0 10px;
+  }
+  .bcam-a-mentor .bam-info button {
+    margin: 0 auto;
+  }
+
+  .bcam-a-mentor .bam-img-holder {
+    width: 90%;
+  }
+}

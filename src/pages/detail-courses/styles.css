@@ -1,0 +1,32 @@
+/* DetailCourses styles */
+
+
+.course-details {
+    padding: 0;
+}
+
+.course-details section {
+    padding: 30px 0;
+}
+
+.course-details header {
+    padding: 20px 0 70px 0;
+}
+
+/* ====MAIN==== */
+
+.course-details .main-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    padding: 70px;
+}
+
+@media (max-width: 1000px) {
+    .course-details .main-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 10px;
+    }
+}

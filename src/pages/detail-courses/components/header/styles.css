@@ -1,0 +1,121 @@
+/* ====HEADER COURSE DETAILS=== */
+
+
+.course-details  header{
+    background-color: var(--color-bg-gray-darker);
+}
+
+.header-course-details {
+    width: 85%;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.header-course-details .header-body h2 {
+    max-width: 712px;
+}
+
+.header-course-details .path span, .header-course-details .path svg  {
+    margin: 5px;
+}
+
+.header-course-details .header-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.header-course-details .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-course-details .rating span {
+    color: #E6E6E6;
+}
+
+.header-course-details .star-img img {
+    height: 20px;
+}
+
+.header-course-details .header-body .placeholder-for-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-grey-dark);
+}
+
+.header-course-details .header-body .name-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    word-wrap: break-word;
+    gap: 10px;
+}
+
+.header-course-details .header-body .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-course-details .header-body button:first-child {
+    padding: 16px 32px;
+    font-size: 16px;
+}
+
+.header-course-details .header-body button svg {
+    margin-left: 5px;
+}
+
+.header-course-details .header-body button:first-child svg {
+    color: var(--color-white);
+    width: 25px;
+    height: 25px;
+}
+
+.header-course-details .header-body button:last-child {
+    padding: 16px 32px;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+.header-course-details .header-body button:last-child svg {
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .header-course-details .header-body {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-course-details .rating {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-course-details .header-body .name-avatar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-course-details .header-body .buttons {
+        flex-direction: column;
+    }
+}

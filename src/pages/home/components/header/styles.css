@@ -1,0 +1,169 @@
+/* =====HEADER===== */
+
+.home-header {
+  background-color: var(--color-bg-blue-dark);
+  height: 740px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 50px 50px 0 50px;
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.home-header .left-side {
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-header .left-side .search-bar {
+  height: 80px;
+  padding: 10px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  color: var(--color-primary);
+  font-size: 34px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.home-header .left-side .search-bar input {
+  height: 100%;
+  width: 75%;
+  font-size: 20px;
+}
+
+.home-header .left-side .search-bar button {
+  padding: 19px 35px;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.home-header .left-side .info-span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  font-family: "Rubik";
+}
+
+.home-header .info-span span {
+  font-weight: 700;
+}
+
+.home-header .right-side {
+  position: relative;
+  width: 529px;
+  height: 683px;
+  background-image: url("../../../../assets/hq720.jpg");
+  border-radius: 8px;
+}
+
+.home-header .right-side::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 480px;
+  box-shadow: 0px 54px 100px var(--color-primary),
+    0px -12px 30px var(--color-primary), 0px 4px 6px var(--color-primary),
+    0px 12px 13px var(--color-primary), 0px -3px 5px var(--color-primary);
+  z-index: -1;
+}
+
+.home-header .right-side .star {
+  width: 152px;
+  height: 24px;
+}
+
+.home-header .right-side .review {
+  width: 184px;
+  height: 117px;
+  background-color: var(--color-white);
+  color: var(--color-text);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-family: "Rubik";
+}
+
+.home-header .right-side .icon {
+  position: absolute;
+}
+
+.home-header .right-side .verification {
+  right: 0;
+  top: 40%;
+}
+
+.home-header .right-side .love {
+  left: 55px;
+  bottom: 40%;
+}
+
+.home-header .right-side .bell {
+  top: 60px;
+  left: 70px;
+}
+
+@media (max-width: 1210px) {
+  .home-header {
+    display: block;
+    height: auto;
+    padding: 30px 40px;
+  }
+
+  .home-header .left-side {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .home-header .right-side {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-header .right-side {
+    max-width: 100%;
+  }
+
+  .home-header .left-side h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .home-header .info-span span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,94 @@
+/* Account styles */
+
+.account-page header {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-bg-gray-darker);
+}
+
+.account-page main {
+  padding-bottom: 100px;
+}
+
+.account-page .courses-header-account {
+  padding: 50px 100px;
+  width: 100%;
+}
+
+.account-page .account-name .avatar-placeholder {
+  width: 150px;
+  height: 150px;
+}
+.account-page .account-name .avatar-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.account-page .account-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.account-page .account-name h3 {
+  color: var(--color-text);
+}
+
+.account-page .account-name span {
+  color: var(--color-black-light);
+  font-weight: 600;
+}
+
+.account-page .filter {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto 0;
+}
+
+.account-page .filter h3 {
+  font-weight: 500;
+  color: var(--color-black-light);
+}
+
+.account-page .filter h3:first-of-type {
+  color: var(--color-text);
+  font-weight: 600;
+  position: relative;
+}
+
+.account-page .filter h3:first-of-type::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 800px) {
+  .account-page .filter {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .account-page .filter h3:first-of-type::after {
+    bottom: 0;
+  }
+
+  .account-page .account-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}

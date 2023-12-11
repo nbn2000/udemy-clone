@@ -1,0 +1,95 @@
+/* ====MODULE COURSES==== */
+
+.module-course {
+    max-width: 728px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--color-text);
+}
+
+.module-course .mc-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.module-course .mc-header span {
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.module-course .mc-body button {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: var(--color-pink-light);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text);
+}
+
+.module-course .mc-body button:active {
+    scale: 1 !important;
+}
+
+.module-course .mc-body button span {
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.module-course .mc-body button svg {
+    font-size: 24px;
+}
+
+.module-course .mc-inner-body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #E6E6E6;
+}
+
+.module-course .mc-inner-body div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-course .mc-inner-body div span {
+    color: var(--color-black-light);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.module-course .mc-inner-body div a {
+    color: var(--color-text);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.module-course .mc-inner-body div svg {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.module-course > button {
+    padding: 24px 40px;
+}
+
+@media (max-width: 1300px) and (min-width: 1000px), (max-width: 700px) {
+    .module-course .mc-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

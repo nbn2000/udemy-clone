@@ -1,0 +1,118 @@
+/* ====TESTIMONIALS==== */
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 505px;
+  color: var(--color-text);
+  width: 85%;
+  margin: 0 auto;
+}
+
+.testimonial .for-flex {
+  display: none;
+  animation: move 0.5s ease-in-out;
+}
+
+.testimonial .for-flex.active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.testimonial button {
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 35px;
+}
+
+.testimonial .grey-button {
+  color: gray;
+}
+
+.testimonial button:active {
+  scale: 0.95;
+}
+
+.testimonial .t-img-holder {
+  width: 338px;
+  height: 377px;
+  background-image: url("../../../../assets/team.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.testimonial .t-img-holder img {
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+}
+
+.testimonial .t-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Rubik";
+}
+
+.testimonial .t-info h3 {
+  font-weight: 500;
+}
+
+.testimonial .t-info span {
+  color: var(--color-black-light);
+}
+
+@media (max-width: 950px) {
+  .testimonial {
+    gap: 10px;
+  }
+
+  .testimonial button {
+    font-size: 20px;
+  }
+
+  .testimonial .for-flex {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimonial .t-img-holder {
+    width: 308px;
+    height: 347px;
+  }
+
+  .testimonial .t-info {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    width: 95%;
+  }
+
+  .testimonial .t-img-holder {
+    width: 70%;
+  }
+}

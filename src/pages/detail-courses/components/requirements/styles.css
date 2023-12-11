@@ -1,0 +1,40 @@
+/* ====REQUIREMENTS==== */
+
+.require {
+    max-width: 728px;
+    min-height: 416px;
+    color: var(--color-text);
+}
+
+.require > div {
+    min-height: 328px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-pink-light);
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+
+.require > div div span {
+    font-weight: 600;
+}
+
+.require > div div svg {
+    color: var(--color-primary);
+    font-size: 30px;
+    padding: 5px;
+}
+
+@media (max-width: 1300px) and (min-width: 1000px), (max-width: 700px){
+    .require {
+        width: 100%;
+    }
+
+    .require > div {
+        padding: 35px 10px;
+    }
+}
+

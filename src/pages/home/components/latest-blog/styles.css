@@ -1,0 +1,69 @@
+/* ====LATEST BLOGS==== */
+
+.latest-blog {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.latest-blog h2 {
+  color: var(--color-text);
+}
+
+.latest-blog .blogs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.latest-blog .blog {
+  max-width: 400px;
+  min-height: 518px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.latest-blog .blog:hover {
+  box-shadow: 40px 40px 57px 0px #0000001a;
+  cursor: pointer;
+}
+
+.latest-blog .blog span {
+  padding: 10px;
+  color: var(--color-black-light);
+}
+
+.latest-blog .blog h4 {
+  color: var(--color-text);
+}
+
+.latest-blog .blog p {
+  color: var(--color-black-light);
+}
+
+.latest-blog .blog a {
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.latest-blog .img-placeholder img {
+  border-radius: 8px;
+}
+
+@media (max-width: 470px) {
+  .latest-blog .blog {
+    max-width: 300px;
+  }
+  .latest-blog {
+    width: 100%;
+  }
+}

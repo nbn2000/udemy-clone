@@ -1,0 +1,109 @@
+/* ====MENTOR==== */
+
+.mentor-section {
+  width: 90%;
+  padding: 0 85px;
+  color: var(--color-black-light);
+}
+
+.mentor-section > h3 {
+  color: var(--color-text);
+  margin: 50px 0;
+}
+
+.mentor-section .mentor-body .img-placeholder img {
+  border-radius: 8px;
+}
+
+.mentor-section .mentor-body {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.mentor-section .mentor-body .mentor-right {
+  width: calc(100% - 317px);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mentor-section .mentor-body .mentor-right h3,
+.mentor-section .mentor-body .mentor-right h4 {
+  color: var(--color-text);
+}
+
+.mentor-section .mentor-right .rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.mentor-section .mentor-right .rating img {
+  padding: 2px;
+}
+
+.mentor-section .mentor-right p {
+  max-width: 481px;
+}
+
+.mentor-section .mentor-right .course-student .blue-round {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+}
+
+.mentor-section .mentor-right .course-student {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.mentor-section .mentor-right .course-student > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .mentor-section {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .mentor-section .mentor-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mentor-section .mentor-body .mentor-right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mentor-section .mentor-right .rating {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mentor-section .mentor-right p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .mentor-section .mentor-right .course-student {
+    flex-direction: column;
+  }
+}

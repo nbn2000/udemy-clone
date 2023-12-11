@@ -1,0 +1,227 @@
+/* ====ALL DEVELOPMENT COURSES==== */
+
+.adc {
+  width: 100%;
+}
+
+.adc .top-adc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.adc .top-adc h2 {
+  color: var(--color-text);
+}
+
+.adc .top-adc .adc-top-buttons button svg {
+  font-size: 20px;
+}
+
+.adc .top-adc .adc-top-buttons button {
+  font-size: 16px;
+  padding: 16px 40px;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.adc .top-adc .adc-top-buttons button:first-child {
+  color: var(--color-primary);
+  background-color: var(--color-pink-light);
+  margin: 0 50px;
+}
+
+.adc .side-courses {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.adc .side-courses aside::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -17%;
+  height: 90%;
+  width: 1px;
+  background-color: var(--color-grey);
+  border-radius: 10px;
+}
+
+.adc .side-courses aside {
+  width: 242px;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.adc .side-courses aside .outside-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 5px;
+  position: relative;
+}
+
+.adc .side-courses aside .outside-div:not(.features)::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-grey);
+  border-radius: 10px;
+}
+
+.adc .side-courses aside .outside-div button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--color-text);
+  border: none;
+  background-color: transparent;
+}
+
+.adc .side-courses aside .outside-div button svg {
+  font-size: 30px;
+}
+
+.adc .side-courses aside .inside-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adc .side-courses aside .inside-div span:first-of-type {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.adc .side-courses aside .inside-div input {
+  width: 18px;
+  height: 18px;
+}
+
+.adc .side-courses aside .inside-div img {
+  height: 16px;
+}
+
+.adc .side-courses aside .inside-div label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.adc .side-courses aside .inside-div span:last-of-type {
+  color: var(--color-black-light);
+}
+
+.adc .side-courses aside .inner-language .inner-language {
+  display: block;
+  text-align: left;
+}
+
+.adc .side-courses aside .inner-language .inner-language span {
+  color: var(--color-text);
+  padding-right: 5px;
+}
+
+.adc .side-courses aside .inner-language .inner-language svg {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.adc .side-courses .courses {
+  width: 100%;
+}
+
+.adc .side-courses .outer-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 282px);
+  padding-bottom: 50px;
+}
+
+.adc .side-courses .outer-courses .pagination-courses {
+  max-width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.adc .side-courses .outer-courses .pagination-courses button {
+  border: none;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--color-grey);
+  font-size: 18px;
+}
+
+.adc .side-courses .outer-courses .pagination-courses button svg {
+  vertical-align: middle;
+}
+
+.adc .side-courses .outer-courses .pagination-courses .numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.adc .side-courses .outer-courses .pagination-courses .clicked {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.adc .side-courses .outer-courses .pagination-courses .clicked-arrow {
+  color: var(--color-primary);
+}
+
+@media (max-width: 708px) {
+  .adc .side-courses {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .adc .top-adc {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .adc .top-adc button {
+    margin: 10px;
+  }
+
+  .adc .side-courses aside::after {
+    display: none;
+  }
+}

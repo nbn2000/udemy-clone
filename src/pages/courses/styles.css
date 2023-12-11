@@ -1,0 +1,9 @@
+/* Courses styles */
+
+.courses-page {
+    padding: 0;
+}
+
+.courses-page section, .courses-page header {
+    padding: 50px 0;
+}

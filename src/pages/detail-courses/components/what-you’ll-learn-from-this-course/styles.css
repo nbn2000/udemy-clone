@@ -1,0 +1,16 @@
+/* ====WHAT YOU WILL LEARN FROM THIS COURSE==== */
+
+.course-details main .section-left-side .wylftc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 712px;
+}
+
+.course-details main .section-left-side .wylftc h3 {
+    color: var(--color-text);
+}
+
+.course-details main .section-left-side .wylftc p {
+    color: var(--color-black-light);
+}

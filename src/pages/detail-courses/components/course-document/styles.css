@@ -1,0 +1,177 @@
+/* =====COURSE DOCUMENT===== */
+
+.course-details .section-right-side {
+  width: 420px;
+}
+
+.course-details main .right-img-placeholder {
+  width: 420px;
+  height: 313px;
+  background-image: url("../../../../assets/bcm-expert.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.course-details main .right-img-placeholder svg {
+  margin: auto;
+  width: 98%;
+  height: 98%;
+  padding: 30%;
+  color: var(--color-white);
+}
+
+.course-details main .right-section-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px var(--color-grey) solid;
+  border-radius: 0 0 8px 8px;
+}
+
+.course-details .right-section-body .h3 {
+  font-family: "Rubik";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--color-text);
+}
+
+.course-details .right-section-body .h4 {
+  font-family: "Rubik";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.course-details main .right-section-body hr {
+  height: 1px;
+  background-color: var(--color-text);
+  width: 100%;
+}
+
+.course-details main .right-section-body .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  gap: 10px;
+}
+
+.course-details main .right-section-body .price del {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Rubik";
+  font-weight: 400;
+  color: var(--color-grey);
+}
+
+.course-details main .right-section-body .course-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--color-text);
+}
+
+.course-details main .right-section-body .course-info span:last-of-type {
+  display: block;
+  white-space: nowrap;
+  height: 54px;
+  padding: 16px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.course-details main .right-section-body .detail-course {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.course-details main .right-section-body .detail-course > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-details main .right-section-body .detail-course svg {
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.course-details main .right-section-body .detail-course span {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.course-details main .right-section-body button {
+  width: 376px;
+  height: 72px;
+  padding: 24px 40px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+}
+
+.course-details main .right-section-body button:last-of-type {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-white);
+}
+
+@media (max-width: 420px) {
+  .course-details .section-right-side,
+  .course-details main .right-img-placeholder {
+    width: 300px;
+  }
+
+  .course-details .section-right-side {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .course-details main .right-img-placeholder {
+    height: 193px;
+  }
+
+  .course-details main .right-img-placeholder svg {
+    padding: 25%;
+  }
+
+  .course-details main .right-section-body button {
+    width: 100%;
+  }
+
+  .course-details main .right-section-body .detail-course {
+    flex-direction: column;
+    justify-content: left;
+    justify-content: left;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .course-details main .right-section-body .course-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .course-details main .right-section-body .price {
+    justify-content: center;
+  }
+}

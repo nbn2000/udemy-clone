@@ -1,0 +1,14 @@
+/* Home styles */
+
+.home {
+  padding: 0;
+}
+
+.home section:not(.become-mentor-section),
+.home header {
+  padding: 30px 0;
+}
+
+.home section:last-of-type {
+  padding: 30px 0 100px 0;
+}

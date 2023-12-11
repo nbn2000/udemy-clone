@@ -1,0 +1,89 @@
+/* ====HEADER==== */
+
+.courses-header {
+    width: 100%;
+    min-height: 785px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    gap: 50px;
+    color: var(--color-text);
+    padding: 0 30px;
+}
+
+.header-inner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+
+.courses-header .header-inner .path {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.courses-header .header-inner .path svg {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.courses-header .header-inner .path span:first-of-type, .courses-header  .header-inner p {
+    color: var(--color-black-light); 
+}
+
+
+.mpdc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mpdc h3 {
+    padding: 0 50px;
+}
+
+.mpdc .mpdc-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mpdc .mpdc-cards button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+
+    .header-inner {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .courses-header {
+        text-align: center;
+    }
+
+    .mpdc .mpdc-cards button {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        padding: 5px;
+    }
+}

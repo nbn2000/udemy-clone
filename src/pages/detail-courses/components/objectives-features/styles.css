@@ -1,0 +1,73 @@
+/* ====OBJECTIVES FEATURES==== */
+
+.obj-feat {
+    max-width: 712px;
+    color: var(--color-text);
+}
+
+.obj-feat .obj-feat-body {
+    min-height: 480px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-pink-light);
+    border-radius: 8px;
+    margin: 50px 0;
+    padding: 40px;
+}
+
+.obj-feat .obj-feat-body > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.obj-feat-body > div:first-of-type span {
+    max-width: 255px;
+}
+
+.obj-feat-body > div:last-of-type span {
+    max-width: 268px;
+}
+
+.obj-feat .obj-feat-body > div span {
+    font-weight: 600;
+}
+
+.obj-feat .obj-feat-body > div div {
+    display: flex;
+    gap: 5px;
+}
+
+.obj-feat .obj-feat-body svg {
+    color: var(--color-primary);
+    font-size: 25px;
+}
+
+@media (max-width: 1300px) and (min-width: 1000px), (max-width: 700px) {
+
+    .obj-feat {
+        width: 100%;
+    }
+
+    .obj-feat .obj-feat-body {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .obj-feat-body > div:first-of-type span, .obj-feat-body > div:last-of-type span  {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .obj-feat .obj-feat-body > div {
+        gap: 15px;
+    }
+
+    .obj-feat .obj-feat-body > div div {
+        justify-content: left;
+    }
+
+}

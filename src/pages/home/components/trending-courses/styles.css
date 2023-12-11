@@ -1,0 +1,54 @@
+/* =====TRENDING COURSES===== */
+
+.courses-section {
+    padding: 0 50px;
+    min-height: 1194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.courses-section h2 {
+    width: 100%;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.courses-section .categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.categories button {
+    border: none;   
+    background-color: transparent;
+    color: var(--color-grey-dark);
+    padding: 10px 20px;
+    width: 167px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.categories .active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.more-button {
+    font-size: 16px;
+    width: 288px;
+    height: 60px;
+}
+
+@media (max-width: 600px) {
+    .courses-section {
+        padding: 20px;
+    } 
+}

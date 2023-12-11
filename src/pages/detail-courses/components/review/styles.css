@@ -1,0 +1,121 @@
+/* ====REVIEW==== */
+
+.review {
+  width: 90%;
+  padding: 0 85px;
+}
+
+.review .review-container {
+  max-width: 818px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.review .review-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--color-text);
+}
+
+.review .review-header button {
+  padding: 16px 40px;
+}
+
+.review .review-header button svg {
+  font-size: 25px;
+  margin: -2px 0 0 10px;
+}
+
+.review .review-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.review .review-body hr {
+  background-color: var(--color-grey-dark);
+  width: 100%;
+  height: 2px;
+  border-radius: 50%;
+}
+
+.review .each-review {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.review .each-review .review-author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review .each-review .review-author .avatar-placeholder img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .each-review .review-author > div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.review .each-review .review-author .star-img {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.review .each-review .review-author .author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.review .each-review .review-author .author h4 {
+  color: var(--color-text);
+}
+
+.review .each-review .review-author .author span,
+.review p {
+  color: var(--color-black-light);
+}
+
+.review .each-review .review-author svg {
+  color: var(--color-text);
+  font-size: 45px;
+  margin: 0 10px;
+}
+
+.review .review-container > button {
+  width: 100%;
+  padding: 24px 40px;
+  margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+  .review {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .review .review-header,
+  .review .each-review .review-author,
+  .review .each-review .review-author > div:first-of-type {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+}
